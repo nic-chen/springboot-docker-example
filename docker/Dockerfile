@@ -1,21 +1,7 @@
-FROM ubuntu:14.04
+FROM hub.c.163.com/library/java:latest
 
-MAINTAINER nic-chen
+ADD /jar /opt/jar
 
-ENV DEBIAN_FRONTEND noninteractive
+EXPOSE 8080
 
-# Update Ubuntu
-RUN apt-get update --fix-missing && apt-get -y upgrade
-
-# Install Oracle Java
-RUN apt-get -y install oracle-java8-installer
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
-
-
-ADD jar /opt/jar
-
-# Expose ports.
-EXPOSE 8080 27017
-
-#CMD /bin/bash
-CMD ["java", "-jar", "/opt/jar/demo-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","/opt/jar/demo-0.0.1.jar"]
