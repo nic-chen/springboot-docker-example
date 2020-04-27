@@ -11,14 +11,17 @@ import org.apache.apisix.common.profile.DefaultProfile;
 import org.apache.apisix.common.profile.Profile;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ApisixAdminClient {
 
     public static boolean reg(){
-        String endpoint = "localhost:9080";
+        String endpoint =  System.getenv("APISIX_ADMIN_ENDPOINT");
+        endpoint = endpoint == null || endpoint.equals("") ? "localhost:9080" : endpoint;
+
+        System.out.println(endpoint);
+
         String version = "1.1";
         String apiKey = "edd1c9f034335f136f87ad84b625c8f1";
 
