@@ -34,6 +34,7 @@ public class ApisixAdminClient {
 
         k8sInfo.setNamespace("default");
         k8sInfo.setDeployName("java-example");
+        k8sInfo.setServiceName("java-example");
         k8sInfo.setPort(8080);
         k8sInfo.setBackendType("pod");
 
