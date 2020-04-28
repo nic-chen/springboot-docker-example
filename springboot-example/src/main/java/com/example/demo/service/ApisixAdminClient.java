@@ -12,7 +12,6 @@ import org.apache.apisix.common.profile.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class ApisixAdminClient {
 
