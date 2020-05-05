@@ -1,14 +1,14 @@
 package com.example.demo.service;
 
-import org.apache.apisix.admin.AdminClient;
-import org.apache.apisix.admin.model.K8sDeploymentInfo;
-import org.apache.apisix.admin.model.Route;
-import org.apache.apisix.admin.model.Upstream;
-import org.apache.apisix.common.exception.ApisixSDKExcetion;
-import org.apache.apisix.common.profile.Credential;
-import org.apache.apisix.common.profile.DefaultCredential;
-import org.apache.apisix.common.profile.DefaultProfile;
-import org.apache.apisix.common.profile.Profile;
+import com.apiseven.apisix.admin.AdminClient;
+import com.apiseven.apisix.admin.model.K8sDeploymentInfo;
+import com.apiseven.apisix.admin.model.Route;
+import com.apiseven.apisix.admin.model.Upstream;
+import com.apiseven.apisix.common.exception.ApisixSDKExcetion;
+import com.apiseven.apisix.common.profile.Credential;
+import com.apiseven.apisix.common.profile.DefaultCredential;
+import com.apiseven.apisix.common.profile.DefaultProfile;
+import com.apiseven.apisix.common.profile.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
