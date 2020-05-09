@@ -32,7 +32,7 @@ public class ApisixAdminClient {
         Upstream upstream = new Upstream();
         K8sDeploymentInfo k8sInfo = new K8sDeploymentInfo();
 
-        k8sInfo.setNamespace("default");
+        k8sInfo.setNamespace("apisix");
         k8sInfo.setDeployName("java-example");
         k8sInfo.setServiceName("java-example");
         k8sInfo.setPort(8080);
